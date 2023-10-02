@@ -1,0 +1,101 @@
+﻿@{
+    ViewData["Title"] = "City Add/Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using System.Data;
+@model Addresh_Book5th.Areas.LOC_City.Models.LOC_CityModel;
+
+<div class="pagetitle">
+    <h1>City Add/Edit</h1>
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+            <li class="breadcrumb-item active"><a asp-controller="LOC_City" asp-action="Index">Country List</a></li>
+            <li class="breadcrumb-item active"><a asp-controller="LOC_City" asp-action="Add">Add</a></li>
+        </ol>
+    </nav>
+</div>
+
+<div class="card col-md-6">
+    <div class="card-body p-3">
+        <form method="post" asp-controller="LOC_City" asp-area="LOC_City" asp-action="Save">
+            @Html.HiddenFor(x => x.CityID)
+
+                <div class="form-group">
+                    <label>Country Name</label>
+                    @*@Html.DropDownListFor(m => m.CountryID, new SelectList(ViewBag.CountryList, "CountryID", "CountryName"), "Select Country", new { @class = "form-control" })*@
+                    <select class="form-control" asp-for="CountryID" asp-items="@(new SelectList(ViewBag.CountryList,"CountryID","CountryName"))" onchange="fnOnCountryChange();">
+                        <option value="">Select Country</option>
+                    </select>
+                    <span asp-validation-for="CountryID" class="text-danger"></span>
+                
+                </div>
+
+            <div class="form-group">
+                <label>State Name</label>
+                @*@Html.DropDownListFor(m => m.CountryID, new SelectList(ViewBag.CountryList, "CountryID", "CountryName"), "Select Country", new { @class = "form-control" })*@
+                <select class="form-control" asp-for="StateID" asp-items="@(new SelectList(ViewBag.StateList,"StateID","StateName"))">
+                    <option value="">Select State</option>
+                </select>
+                <span asp-validation-for="StateID" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label>City Name</label>
+                <input type="text" class="form-control" asp-for="CityName" placeholder="Enter City Name..." />
+                <span asp-validation-for="CityName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label>City Code</label>
+                <input type="text" class="form-control" asp-for="CityCode" placeholder="Enter City Code..." />
+                <span asp-validation-for="CityCode" class="text-danger"></span>
+            </div>
+
+            <hr />
+            <input type="submit" class="btn btn-success" />
+            <a asp-controller="LOC_City" asp-action="Cancel" class="btn btn-primary">Cancle</a>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<script>
+    function fnOnCountryChange() {
+        var CountryID = $("#CountryID").val();
+        console.log(CountryID);
+        if (CountryID !== "") 
+        {
+            $("#StateID").empty();
+            $("#StateID").append($("<option></option>").val("").html("Select State"));
+            $.ajax(
+                {
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    url: "@Url.Action("StateDropDownByCountryID", "LOC_City")" + "?&CountryID=" + CountryID,
+                    data: {},
+                    dataType: "json",
+                    success: function (Result) {
+                        $.each(Result,
+                            function (key, value) {
+                                $("#StateID").append($("<option></option>").val(value.stateID).html(value.stateName));
+                            });
+                    },
+                    error: function (r) {
+                        alert("Error while loading combobox.");
+                    }
+                });
+        }
+        else {
+            $("#StateID").empty();
+            $("#StateID").append($("<option></option>").val("").html("Select State"));
+        }
+    }
+</script>
+
+

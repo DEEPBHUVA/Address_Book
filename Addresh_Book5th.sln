@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Addresh_Book5th", "Addresh_Book5th\Addresh_Book5th.csproj", "{D2CA302E-58F3-4F18-8F41-21345360271E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2CA302E-58F3-4F18-8F41-21345360271E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2CA302E-58F3-4F18-8F41-21345360271E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2CA302E-58F3-4F18-8F41-21345360271E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2CA302E-58F3-4F18-8F41-21345360271E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ACD527AA-1295-4C76-BDF4-AF38FE91BF9C}
+	EndGlobalSection
+EndGlobal

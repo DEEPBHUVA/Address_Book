@@ -1,0 +1,123 @@
+﻿@{
+    ViewData["Title"] = "Student Add/Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using System.Data;
+@model Addresh_Book5th.Areas.MST_Student.Models.MST_StudentModel;
+
+<div class="pagetitle">
+    <h1>Student Add/Edit</h1>
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+            <li class="breadcrumb-item"><a asp-controller="MST_Student" asp-action="Index">Student List</a></li>
+            <li class="breadcrumb-item active"><a asp-controller="MST_Student" asp-action="Add">Add</a></li>
+        </ol>
+    </nav>
+</div>
+
+
+<div class="card col-md-12">
+    <div class="card-body p-3">
+        <form method="post" asp-controller="MST_Student" asp-area="MST_Student" asp-action="Save" enctype="multipart/form-data">
+            @Html.HiddenFor(x => x.StudentID)
+            @Html.HiddenFor(x => x.PhotoPath)
+
+            <div class="form-group">
+                <label>Student Name</label>
+                <input type="text" class="form-control" asp-for="StudentName" placeholder="Enter Student Name..." />
+                <span asp-validation-for="StudentName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Image</label>
+                <input type="file" class="form-control" asp-for="File" placeholder="Upload Image Here..."/>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label>Student Email</label>
+                    <input type="text" class="form-control" asp-for="Email" placeholder="Enter Email"/>
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Student Mobile No.</label>
+                    <input type="text" class="form-control" asp-for="MobileNoStudent" placeholder="Enter Student Mobile No..." />
+                    <span asp-validation-for="MobileNoStudent" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label>Branch Name</label>
+                    <select class="form-control" asp-for="BranchID" asp-items="@(new SelectList(ViewBag.BranchList,"BranchID","BranchName"))">
+                        <option value="">Select Branch</option>
+                    </select>
+                    <span asp-validation-for="BranchID" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label>City Name</label>
+                    <select class="form-control" asp-for="CityID" asp-items="@(new SelectList(ViewBag.CityList,"CityID","CityName"))">
+                        <option value="">Select City</option>
+                    </select>
+                    <span asp-validation-for="CityID" class="text-danger"></span>
+                </div>
+            </div>
+                
+            <div class="form-group">
+                <label>Addresh</label>
+                <input type="text" class="form-control" asp-for="Address" placeholder="Enter Address..." />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-3">
+                    <label>BirthDate</label>
+                    <input type="date" class="form-control" asp-for="BirthDate"/>
+                    <span asp-validation-for="BirthDate" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Age</label>
+                    <input type="text" class="form-control" asp-for="Age" placeholder="Enter Age..."/>
+                    <span asp-validation-for="Age" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Father Mobile No.</label>
+                    <input type="text" class="form-control" asp-for="MobileNoFather" placeholder="Enter Father Mobile No..." />
+                    <span asp-validation-for="MobileNoFather" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-6 p-2">
+                    <label>IsActive</label>
+                    <label>:</label>
+                    @Html.RadioButtonFor(model => model.IsActive, "True", false)@Html.Label("True")
+                    @Html.RadioButtonFor(model => model.IsActive, "False", false)@Html.Label("False")
+                    <span asp-validation-for="IsActive" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6 p-2">
+                    <label>Gender</label>
+                    <label>:</label>
+                    @Html.RadioButtonFor(model => model.Gender, "Male", false)@Html.Label("Male")
+                    @Html.RadioButtonFor(model => model.Gender, "Female", false)@Html.Label("Female")
+                    <span asp-validation-for="Gender" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input type="text" class="form-control" asp-for="Password" placeholder="Enter Password..." />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <hr />
+            <input type="submit" class="btn btn-success col-md-1" />
+            <a asp-controller="MST_Student" asp-action="Cancle" class="btn btn-primary">Cancle</a>
+        </form>
+    </div>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
