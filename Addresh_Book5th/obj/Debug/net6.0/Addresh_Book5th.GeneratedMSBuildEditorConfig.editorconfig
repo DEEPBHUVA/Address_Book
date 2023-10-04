@@ -1,0 +1,105 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Addresh_Book5th
+build_property.RootNamespace = Addresh_Book5th
+build_property.ProjectDir = D:\CollageMaterial\Sem-5\.Net\.Net_Project\Addresh_Book5th\Addresh_Book5th\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\CollageMaterial\Sem-5\.Net\.Net_Project\Addresh_Book5th\Addresh_Book5th
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/CollageMaterial/Sem-5/.Net/.Net_Project/Addresh_Book5th/Addresh_Book5th/Areas/LOC_City/Views/LOC_City/LOC_City_AddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE9DX0NpdHlcVmlld3NcTE9DX0NpdHlcTE9DX0NpdHlfQWRkRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CollageMaterial/Sem-5/.Net/.Net_Project/Addresh_Book5th/Addresh_Book5th/Areas/LOC_City/Views/LOC_City/LOC_City_List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE9DX0NpdHlcVmlld3NcTE9DX0NpdHlcTE9DX0NpdHlfTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CollageMaterial/Sem-5/.Net/.Net_Project/Addresh_Book5th/Addresh_Book5th/Areas/LOC_City/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE9DX0NpdHlcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CollageMaterial/Sem-5/.Net/.Net_Project/Addresh_Book5th/Addresh_Book5th/Areas/LOC_Country/Views/LOC_Country/LOC_Country_AddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE9DX0NvdW50cnlcVmlld3NcTE9DX0NvdW50cnlcTE9DX0NvdW50cnlfQWRkRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CollageMaterial/Sem-5/.Net/.Net_Project/Addresh_Book5th/Addresh_Book5th/Areas/LOC_Country/Views/LOC_Country/LOC_Country_List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE9DX0NvdW50cnlcVmlld3NcTE9DX0NvdW50cnlcTE9DX0NvdW50cnlfTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CollageMaterial/Sem-5/.Net/.Net_Project/Addresh_Book5th/Addresh_Book5th/Areas/LOC_Country/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE9DX0NvdW50cnlcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CollageMaterial/Sem-5/.Net/.Net_Project/Addresh_Book5th/Addresh_Book5th/Areas/LOC_State/Views/LOC_State/LOC_StateAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE9DX1N0YXRlXFZpZXdzXExPQ19TdGF0ZVxMT0NfU3RhdGVBZGRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CollageMaterial/Sem-5/.Net/.Net_Project/Addresh_Book5th/Addresh_Book5th/Areas/LOC_State/Views/LOC_State/LOC_State_List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE9DX1N0YXRlXFZpZXdzXExPQ19TdGF0ZVxMT0NfU3RhdGVfTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CollageMaterial/Sem-5/.Net/.Net_Project/Addresh_Book5th/Addresh_Book5th/Areas/LOC_State/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTE9DX1N0YXRlXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CollageMaterial/Sem-5/.Net/.Net_Project/Addresh_Book5th/Addresh_Book5th/Areas/MST_Branch/Views/MST_Branch/MST_BranchAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTVNUX0JyYW5jaFxWaWV3c1xNU1RfQnJhbmNoXE1TVF9CcmFuY2hBZGRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CollageMaterial/Sem-5/.Net/.Net_Project/Addresh_Book5th/Addresh_Book5th/Areas/MST_Branch/Views/MST_Branch/MST_Branch_List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTVNUX0JyYW5jaFxWaWV3c1xNU1RfQnJhbmNoXE1TVF9CcmFuY2hfTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CollageMaterial/Sem-5/.Net/.Net_Project/Addresh_Book5th/Addresh_Book5th/Areas/MST_Branch/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTVNUX0JyYW5jaFxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CollageMaterial/Sem-5/.Net/.Net_Project/Addresh_Book5th/Addresh_Book5th/Areas/MST_Student/Views/MST_Student/MST_StudentAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTVNUX1N0dWRlbnRcVmlld3NcTVNUX1N0dWRlbnRcTVNUX1N0dWRlbnRBZGRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CollageMaterial/Sem-5/.Net/.Net_Project/Addresh_Book5th/Addresh_Book5th/Areas/MST_Student/Views/MST_Student/MST_Student_List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTVNUX1N0dWRlbnRcVmlld3NcTVNUX1N0dWRlbnRcTVNUX1N0dWRlbnRfTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CollageMaterial/Sem-5/.Net/.Net_Project/Addresh_Book5th/Addresh_Book5th/Areas/MST_Student/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTVNUX1N0dWRlbnRcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CollageMaterial/Sem-5/.Net/.Net_Project/Addresh_Book5th/Addresh_Book5th/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CollageMaterial/Sem-5/.Net/.Net_Project/Addresh_Book5th/Addresh_Book5th/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CollageMaterial/Sem-5/.Net/.Net_Project/Addresh_Book5th/Addresh_Book5th/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CollageMaterial/Sem-5/.Net/.Net_Project/Addresh_Book5th/Addresh_Book5th/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CollageMaterial/Sem-5/.Net/.Net_Project/Addresh_Book5th/Addresh_Book5th/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CollageMaterial/Sem-5/.Net/.Net_Project/Addresh_Book5th/Addresh_Book5th/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CollageMaterial/Sem-5/.Net/.Net_Project/Addresh_Book5th/Addresh_Book5th/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-b8a7ws0baa
