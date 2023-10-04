@@ -24,7 +24,6 @@ namespace Addresh_Book5th.Areas.LOC_State.Controllers
         #endregion
 
         #region SelectAll
-
         public IActionResult Index(string? CountryName, string? StateName, string? StateCode, bool filter = false)
         {
             string myconnstr = this.Configuration.GetConnectionString("MyConnectingString");

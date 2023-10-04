@@ -9,32 +9,8 @@
       "PackagePath": "staticwebassets\\Images\\.Net.png"
     },
     {
-      "Id": "D:\\CollageMaterial\\Sem-5\\.Net\\.Net_Project\\Addresh_Book5th\\Addresh_Book5th\\wwwroot\\Images\\.trashed-1643738868-PicsArt_12-11-02.36.25.jpg",
-      "PackagePath": "staticwebassets\\Images\\.trashed-1643738868-PicsArt_12-11-02.36.25.jpg"
-    },
-    {
-      "Id": "D:\\CollageMaterial\\Sem-5\\.Net\\.Net_Project\\Addresh_Book5th\\Addresh_Book5th\\wwwroot\\Images\\2022-04-06.png",
-      "PackagePath": "staticwebassets\\Images\\2022-04-06.png"
-    },
-    {
       "Id": "D:\\CollageMaterial\\Sem-5\\.Net\\.Net_Project\\Addresh_Book5th\\Addresh_Book5th\\wwwroot\\Images\\IMG_20200718_113722.JPG",
       "PackagePath": "staticwebassets\\Images\\IMG_20200718_113722.JPG"
-    },
-    {
-      "Id": "D:\\CollageMaterial\\Sem-5\\.Net\\.Net_Project\\Addresh_Book5th\\Addresh_Book5th\\wwwroot\\Images\\PicsArt_01-02-09.39.43.jpg",
-      "PackagePath": "staticwebassets\\Images\\PicsArt_01-02-09.39.43.jpg"
-    },
-    {
-      "Id": "D:\\CollageMaterial\\Sem-5\\.Net\\.Net_Project\\Addresh_Book5th\\Addresh_Book5th\\wwwroot\\Images\\PicsArt_01-14-05.22.48.jpg",
-      "PackagePath": "staticwebassets\\Images\\PicsArt_01-14-05.22.48.jpg"
-    },
-    {
-      "Id": "D:\\CollageMaterial\\Sem-5\\.Net\\.Net_Project\\Addresh_Book5th\\Addresh_Book5th\\wwwroot\\Images\\PicsArt_01-15-04.57.45.jpg",
-      "PackagePath": "staticwebassets\\Images\\PicsArt_01-15-04.57.45.jpg"
-    },
-    {
-      "Id": "D:\\CollageMaterial\\Sem-5\\.Net\\.Net_Project\\Addresh_Book5th\\Addresh_Book5th\\wwwroot\\Images\\PicsArt_01-15-06.20.14.jpg",
-      "PackagePath": "staticwebassets\\Images\\PicsArt_01-15-06.20.14.jpg"
     },
     {
       "Id": "D:\\CollageMaterial\\Sem-5\\.Net\\.Net_Project\\Addresh_Book5th\\Addresh_Book5th\\wwwroot\\Images\\PicsArt_06-25-10.12.49.jpg",
@@ -55,6 +31,10 @@
     {
       "Id": "D:\\CollageMaterial\\Sem-5\\.Net\\.Net_Project\\Addresh_Book5th\\Addresh_Book5th\\wwwroot\\Images\\testimonials-4.jpg",
       "PackagePath": "staticwebassets\\Images\\testimonials-4.jpg"
+    },
+    {
+      "Id": "D:\\CollageMaterial\\Sem-5\\.Net\\.Net_Project\\Addresh_Book5th\\Addresh_Book5th\\wwwroot\\Images\\testimonials-5.jpg",
+      "PackagePath": "staticwebassets\\Images\\testimonials-5.jpg"
     },
     {
       "Id": "D:\\CollageMaterial\\Sem-5\\.Net\\.Net_Project\\Addresh_Book5th\\Addresh_Book5th\\wwwroot\\assets\\css\\style.css",

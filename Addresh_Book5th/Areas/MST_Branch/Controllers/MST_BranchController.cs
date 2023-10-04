@@ -22,10 +22,28 @@ namespace Addresh_Book5th.Areas.MST_Branch.Controllers
         #endregion
 
         #region SelectAll
-        public IActionResult Index()
+        public IActionResult Index(string? BranchName, string? BranchCode, bool filter = false)
         {
-            DataTable dt = dalMST_Branch.PR_MST_Branch_SelectAll();
-            return View("MST_Branch_List", dt);
+            string MyCONNstr = this.Configuration.GetConnectionString("MyConnectingString"); 
+            DataTable dtable = new DataTable();
+            SqlConnection SQLConn = new SqlConnection(MyCONNstr); 
+            SQLConn.Open();
+            SqlCommand cmd = SQLConn.CreateCommand(); 
+            cmd.CommandType = CommandType.StoredProcedure;
+            if (Convert.ToBoolean(filter))
+            {
+                cmd.CommandText = "PR_Branch_Filter"; 
+                cmd.Parameters.AddWithValue("@BranchName", BranchName);
+                cmd.Parameters.AddWithValue("@BranchCode", BranchCode);
+            }
+            else
+            {
+                cmd.CommandText = "PR_MST_Branch_SelectAll";
+            }
+            SqlDataReader objStr = cmd.ExecuteReader();
+            dtable.Load(objStr);
+            return View("MST_Branch_List", dtable);
+            
         }
         #endregion
 

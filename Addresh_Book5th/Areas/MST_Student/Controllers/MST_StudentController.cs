@@ -25,9 +25,29 @@ namespace Addresh_Book5th.Areas.MST_Student.Controllers
         #endregion
 
         #region SelectAll
-        public IActionResult Index()
+
+        public IActionResult Index(string? StudentName, string? BranchName, string? CityName, bool filter = false)
         {
-            DataTable dt = dalMST_Studnet.PR_MST_Student_SelectAll();
+            string myconnstr = this.Configuration.GetConnectionString("MyConnectingString");
+            DataTable dt = new DataTable();
+            SqlConnection sqlConnection = new SqlConnection(myconnstr);
+            sqlConnection.Open();
+            SqlCommand cmd = sqlConnection.CreateCommand();
+            cmd.CommandType = CommandType.StoredProcedure;
+            if (Convert.ToBoolean(filter))
+            {
+                cmd.CommandText = "PR_Student_Filter";
+                cmd.Parameters.AddWithValue("@StudentName", StudentName);
+                cmd.Parameters.AddWithValue("@BranchName", BranchName);
+                cmd.Parameters.AddWithValue("@CityName", CityName);
+            }
+            else
+            {
+                cmd.CommandText = "PR_MST_Student_SelectAll";
+            }
+            SqlDataReader reader = cmd.ExecuteReader();
+            dt.Load(reader);
+            sqlConnection.Close();
             return View("MST_Student_List", dt);
         }
         #endregion
@@ -168,6 +188,24 @@ namespace Addresh_Book5th.Areas.MST_Student.Controllers
         public IActionResult Cancle()
         {
             return RedirectToAction("Index");
+        }
+        #endregion
+
+        #region ViewProfile
+        public IActionResult ViewProfile(int StudentID)
+        {
+            string myconnstr = this.Configuration.GetConnectionString("MyConnectingString");
+            DataTable dt = new DataTable();
+            SqlConnection sqlConnection = new SqlConnection(myconnstr);
+            sqlConnection.Open();
+            SqlCommand cmd = sqlConnection.CreateCommand();
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "PR_MST_Student_SelectByPK";
+            cmd.Parameters.AddWithValue("@StudentID", StudentID);
+            SqlDataReader reader = cmd.ExecuteReader();
+            dt.Load(reader);
+            sqlConnection.Close();
+            return View("View_Profile", dt);
         }
         #endregion
 

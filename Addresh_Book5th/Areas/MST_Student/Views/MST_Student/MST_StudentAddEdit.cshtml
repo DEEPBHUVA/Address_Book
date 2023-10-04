@@ -24,40 +24,40 @@
             @Html.HiddenFor(x => x.StudentID)
             @Html.HiddenFor(x => x.PhotoPath)
 
-            <div class="form-group">
-                <label>Student Name</label>
+            <div class="form-group my-2">
+                <label class="my-1"><span class="text-danger">*</span>Student Name</label>
                 <input type="text" class="form-control" asp-for="StudentName" placeholder="Enter Student Name..." />
                 <span asp-validation-for="StudentName" class="text-danger"></span>
             </div>
 
-            <div class="form-group">
-                <label>Image</label>
+            <div class="form-group my-2">
+                <label class="my-1">Image</label>
                 <input type="file" class="form-control" asp-for="File" placeholder="Upload Image Here..."/>
             </div>
 
-            <div class="row">
+            <div class="row my-2">
                 <div class="form-group col-md-6">
-                    <label>Student Email</label>
+                    <label class="my-1"><span class="text-danger">*</span>Student Email</label>
                     <input type="text" class="form-control" asp-for="Email" placeholder="Enter Email"/>
                     <span asp-validation-for="Email" class="text-danger"></span>
                 </div>
                 <div class="form-group col-md-6">
-                    <label>Student Mobile No.</label>
+                    <label class="my-1"><span class="text-danger">*</span>Student Mobile No.</label>
                     <input type="text" class="form-control" asp-for="MobileNoStudent" placeholder="Enter Student Mobile No..." />
                     <span asp-validation-for="MobileNoStudent" class="text-danger"></span>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row my-2">
                 <div class="form-group col-md-6">
-                    <label>Branch Name</label>
+                    <label class="my-1"><span class="text-danger">*</span>Branch Name</label>
                     <select class="form-control" asp-for="BranchID" asp-items="@(new SelectList(ViewBag.BranchList,"BranchID","BranchName"))">
                         <option value="">Select Branch</option>
                     </select>
                     <span asp-validation-for="BranchID" class="text-danger"></span>
                 </div>
                 <div class="form-group col-md-6">
-                    <label>City Name</label>
+                    <label class="my-1"><span class="text-danger">*</span>City Name</label>
                     <select class="form-control" asp-for="CityID" asp-items="@(new SelectList(ViewBag.CityList,"CityID","CityName"))">
                         <option value="">Select City</option>
                     </select>
@@ -65,40 +65,40 @@
                 </div>
             </div>
                 
-            <div class="form-group">
-                <label>Addresh</label>
+            <div class="form-group my-2">
+                <label class="my-1"><span class="text-danger">*</span>Addresh</label>
                 <input type="text" class="form-control" asp-for="Address" placeholder="Enter Address..." />
                 <span asp-validation-for="Address" class="text-danger"></span>
             </div>
 
-            <div class="row">
+            <div class="row my-2">
                 <div class="form-group col-md-3">
-                    <label>BirthDate</label>
+                    <label class="my-1"><span class="text-danger">*</span>BirthDate</label>
                     <input type="date" class="form-control" asp-for="BirthDate"/>
                     <span asp-validation-for="BirthDate" class="text-danger"></span>
                 </div>
                 <div class="form-group col-md-3">
-                    <label>Age</label>
+                    <label class="my-1"><span class="text-danger">*</span>Age</label>
                     <input type="text" class="form-control" asp-for="Age" placeholder="Enter Age..."/>
                     <span asp-validation-for="Age" class="text-danger"></span>
                 </div>
                 <div class="form-group col-md-6">
-                    <label>Father Mobile No.</label>
+                    <label class="my-1"><span class="text-danger">*</span>Father Mobile No.</label>
                     <input type="text" class="form-control" asp-for="MobileNoFather" placeholder="Enter Father Mobile No..." />
                     <span asp-validation-for="MobileNoFather" class="text-danger"></span>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row my-2">
                 <div class="form-group col-md-6 p-2">
-                    <label>IsActive</label>
+                    <label class="my-1"><span class="text-danger">*</span>IsActive</label>
                     <label>:</label>
                     @Html.RadioButtonFor(model => model.IsActive, "True", false)@Html.Label("True")
                     @Html.RadioButtonFor(model => model.IsActive, "False", false)@Html.Label("False")
                     <span asp-validation-for="IsActive" class="text-danger"></span>
                 </div>
                 <div class="form-group col-md-6 p-2">
-                    <label>Gender</label>
+                    <label class="my-1"><span class="text-danger">*</span>Gender</label>
                     <label>:</label>
                     @Html.RadioButtonFor(model => model.Gender, "Male", false)@Html.Label("Male")
                     @Html.RadioButtonFor(model => model.Gender, "Female", false)@Html.Label("Female")
@@ -107,7 +107,7 @@
             </div>
 
             <div class="form-group">
-                <label>Password</label>
+                <label class="my-1"><span class="text-danger">*</span>Password</label>
                 <input type="text" class="form-control" asp-for="Password" placeholder="Enter Password..." />
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>

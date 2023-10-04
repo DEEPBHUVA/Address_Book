@@ -20,6 +20,7 @@ namespace Addresh_Book5th.Areas.LOC_Country.Controllers
         }
         #endregion
 
+        
         #region SelectAll
         //public IActionResult Index()
         //{
@@ -48,6 +49,7 @@ namespace Addresh_Book5th.Areas.LOC_Country.Controllers
             SqlDataReader objStr = cmd.ExecuteReader();
             dtable.Load(objStr);
             return View("LOC_Country_List", dtable);
+            
         }
         #endregion
 

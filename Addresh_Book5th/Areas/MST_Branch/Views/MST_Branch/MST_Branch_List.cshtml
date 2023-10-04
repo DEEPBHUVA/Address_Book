@@ -25,6 +25,33 @@
 }
 
 <section class="section">
+    <div class="card">
+        <div class="card-body">
+            <form class="row align-items-end rounded" method="POST" asp-area="MST_Branch" asp-controller="MST_Branch" asp-action="Index" asp-route-filter="true">
+                <div>
+                    <h5 class="card-title"><i class="bi bi-funnel"></i> Filter</h5>
+                </div>
+                <hr />
+
+                <div class="col-md-5">
+                    <label for="BranchName" class="form-label">Branch Name</label>
+                    <input type="text" name="BranchName" class="form-control" id="BranchName" placeholder="e.g. Computer">
+                </div>
+
+                <div class="col-md-5">
+                    <label for="BranchCode" class="form-label">Branch Code</label>
+                    <input type="text" name="BranchCode" class="form-control" id="BranchCode" placeholder="e.g. CU">
+                </div>
+
+                <div class="col-md-2">
+                    <button type="submit" title="Search" class="btn btn-success w-100">Search <i class="bi bi-search"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="section">
     <div class="row">
         <div class="col-lg-12">
             <div class="card">
