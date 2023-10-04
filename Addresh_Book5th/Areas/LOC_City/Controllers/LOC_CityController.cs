@@ -24,10 +24,22 @@ namespace Addresh_Book5th.Areas.LOC_City.Controllers
         #endregion
 
         #region SelectAll
-        public IActionResult Index()
+        public IActionResult Index(string? CountryName = null, string? StateName = null, string? CityName = null)
         {
-            DataTable dt = dalLOC_City.PR_LOC_City_SelectAll();
-            return View("LOC_City_List",dt);
+            string myconnstr = this.Configuration.GetConnectionString("MyConnectingString");
+            DataTable dt = new DataTable();
+            SqlConnection sqlConnection = new SqlConnection(myconnstr);
+            sqlConnection.Open();
+            SqlCommand cmd = sqlConnection.CreateCommand();
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "PR_City_SelectAll";
+            cmd.Parameters.AddWithValue("CountryName", CountryName);
+            cmd.Parameters.AddWithValue("StateName", StateName);
+            cmd.Parameters.AddWithValue("CityName", CityName);
+            SqlDataReader reader = cmd.ExecuteReader();
+            dt.Load(reader);
+            sqlConnection.Close();
+            return View("LOC_City_List", dt);
         }
         #endregion
 

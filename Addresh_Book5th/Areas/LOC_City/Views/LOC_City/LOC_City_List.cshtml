@@ -27,6 +27,38 @@
 }
 
 <section class="section">
+    <div class="card">
+        <div class="card-body">
+            <form class="row align-items-end rounded px-1" method="POST" asp-area="LOC_City" asp-controller="LOC_City" asp-action="Index" asp-route-filter="true">
+                <div>
+                    <h5 class="card-title"><i class="bi bi-funnel"></i> Filter</h5>
+                </div>
+                <hr />
+
+                <div class="col-md-3">
+                    <label for="CountryName" class="form-label">Country Name</label>
+                    <input type="text" name="CountryName" class="form-control" id="CountryName" placeholder="e.g. India">
+                </div>
+
+                <div class="col-md-3">
+                    <label for="StateName" class="form-label">State Name</label>
+                    <input type="text" name="StateName" class="form-control" id="StateName" placeholder="e.g. Gujarat">
+                </div>
+
+                <div class="col-md-3">
+                    <label for="CityName" class="form-label">City Name</label>
+                    <input type="text" name="CityName" class="form-control" id="CityName" placeholder="e.g. Rajkot">
+                </div>
+
+                <div class="col-md-3">
+                    <button type="submit" title="Search" class="btn btn-success w-100">Search <i class="bi bi-search"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="section">
     <div class="row">
         <div class="col-lg-12">
             <div class="card">

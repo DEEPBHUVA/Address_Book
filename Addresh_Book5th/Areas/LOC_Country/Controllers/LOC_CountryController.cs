@@ -3,7 +3,6 @@ using System.Data.SqlClient;
 using System.Data;
 using Addresh_Book5th.Areas.LOC_Country.Models;
 using Addresh_Book5th.DAL;
-using System.Configuration;
 
 namespace Addresh_Book5th.Areas.LOC_Country.Controllers
 {

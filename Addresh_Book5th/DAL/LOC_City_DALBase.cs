@@ -130,7 +130,5 @@ namespace Addresh_Book5th.DAL
         }
         #endregion
 
-
-
     }
 }

@@ -109,15 +109,15 @@ namespace Addresh_Book5th.DAL
                 DbCommand dbCMD = sqlDB.GetStoredProcCommand("PR_Country_UpdateByPK");
                 sqlDB.AddInParameter(dbCMD, "CountryID", SqlDbType.Int, CountryID);
                 sqlDB.AddInParameter(dbCMD, "CountryName", SqlDbType.VarChar, CountryName);
-                sqlDB.AddInParameter(dbCMD, "CountyCode", SqlDbType.NVarChar, CountyCode);
+                sqlDB.AddInParameter(dbCMD, "CountryCode", SqlDbType.NVarChar, CountyCode);
 
                 DataTable dt = new DataTable();
-
-                using (IDataReader dr = sqlDB.ExecuteReader(dbCMD))
+                int r=sqlDB.ExecuteNonQuery(dbCMD);
+/*                using (IDataReader dr = sqlDB.ExecuteReader(dbCMD))
                 {
                     dt.Load(dr);
 
-                }
+                }*/
                 return dt;
             }
             catch (Exception e)

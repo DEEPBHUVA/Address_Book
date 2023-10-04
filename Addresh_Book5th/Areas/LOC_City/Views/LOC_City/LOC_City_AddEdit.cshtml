@@ -22,15 +22,15 @@
         <form method="post" asp-controller="LOC_City" asp-area="LOC_City" asp-action="Save">
             @Html.HiddenFor(x => x.CityID)
 
-                <div class="form-group">
-                    <label>Country Name</label>
-                    @*@Html.DropDownListFor(m => m.CountryID, new SelectList(ViewBag.CountryList, "CountryID", "CountryName"), "Select Country", new { @class = "form-control" })*@
-                    <select class="form-control" asp-for="CountryID" asp-items="@(new SelectList(ViewBag.CountryList,"CountryID","CountryName"))" onchange="fnOnCountryChange();">
-                        <option value="">Select Country</option>
-                    </select>
-                    <span asp-validation-for="CountryID" class="text-danger"></span>
+            <div class="form-group">
+                <label>Country Name</label>
+                @*@Html.DropDownListFor(m => m.CountryID, new SelectList(ViewBag.CountryList, "CountryID", "CountryName"), "Select Country", new { @class = "form-control" })*@
+                <select class="form-control" asp-for="CountryID" asp-items="@(new SelectList(ViewBag.CountryList,"CountryID","CountryName"))" onchange="fnOnCountryChange();">
+                    <option value="">Select Country</option>
+                </select>
+                <span asp-validation-for="CountryID" class="text-danger"></span>
                 
-                </div>
+            </div>
 
             <div class="form-group">
                 <label>State Name</label>

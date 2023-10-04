@@ -24,10 +24,29 @@ namespace Addresh_Book5th.Areas.LOC_State.Controllers
         #endregion
 
         #region SelectAll
-        public IActionResult Index()
+
+        public IActionResult Index(string? CountryName, string? StateName, string? StateCode, bool filter = false)
         {
-           
-            DataTable dt = dalLOC_State.PR_LOC_State_SelectAll();
+            string myconnstr = this.Configuration.GetConnectionString("MyConnectingString");
+            DataTable dt = new DataTable();
+            SqlConnection sqlConnection = new SqlConnection(myconnstr);
+            sqlConnection.Open();
+            SqlCommand cmd = sqlConnection.CreateCommand();
+            cmd.CommandType = CommandType.StoredProcedure;
+            if (Convert.ToBoolean(filter))
+            {
+                cmd.CommandText = "PR_State_Filter";
+                cmd.Parameters.AddWithValue("@CountryName", CountryName);
+                cmd.Parameters.AddWithValue("@StateName", StateName);
+                cmd.Parameters.AddWithValue("@StateCode", StateCode);
+            }
+            else
+            {
+                cmd.CommandText = "PR_State_SelectAll";
+            }
+            SqlDataReader reader = cmd.ExecuteReader();
+            dt.Load(reader);
+            sqlConnection.Close();
             return View("LOC_State_List", dt);
         }
         #endregion
