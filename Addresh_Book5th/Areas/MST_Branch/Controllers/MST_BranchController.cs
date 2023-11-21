@@ -52,6 +52,7 @@ namespace Addresh_Book5th.Areas.MST_Branch.Controllers
         {
             if (Convert.ToBoolean(dalMST_Branch.PR_MST_Branch_DeleteByPK(BranchID)))
             {
+                TempData["MST_Branch_Delete_Message"] = "Record Deleted Successfully!!";
                 return RedirectToAction("Index");
             }
             return RedirectToAction("Index");

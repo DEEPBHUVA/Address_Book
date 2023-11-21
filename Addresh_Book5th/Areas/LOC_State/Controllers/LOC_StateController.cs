@@ -55,6 +55,7 @@ namespace Addresh_Book5th.Areas.LOC_State.Controllers
         {
             if (Convert.ToBoolean(dalLOC_State.PR_LOC_State_DeleteByPk(StateID)))
             {
+                TempData["LOC_State_Delete_Message"] = "Record Deleted Successfully!!";
                 return RedirectToAction("Index");
             }
             return RedirectToAction("Index");

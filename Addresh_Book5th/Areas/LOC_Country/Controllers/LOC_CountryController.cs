@@ -58,6 +58,7 @@ namespace Addresh_Book5th.Areas.LOC_Country.Controllers
             {
             if(Convert.ToBoolean(dalLOC_Country.PR_LOC_Country_Delete(CountryID)))
             {
+                TempData["LOC_Country_Delete_Message"] = "Record Deleted Successfully!!";
                 return RedirectToAction("Index"); 
             }
             return RedirectToAction("Index");

@@ -24,6 +24,14 @@
     </div>
 }
 
+@if (TempData["MST_Branch_Delete_Message"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @TempData["MST_Branch_Delete_Message"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
 <section class="section">
     <div class="card">
         <div class="card-body">

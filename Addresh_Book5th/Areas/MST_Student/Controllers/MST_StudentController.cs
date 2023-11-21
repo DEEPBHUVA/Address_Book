@@ -57,6 +57,7 @@ namespace Addresh_Book5th.Areas.MST_Student.Controllers
         {
             if (Convert.ToBoolean(dalMST_Studnet.PR_MST_Student_DeleteByPK(StudentID)))
             {
+                TempData["MST_Student_Delete_Message"] = "Record Deleted Successfully!!";
                 return RedirectToAction("Index");
             }
             return RedirectToAction("Index");

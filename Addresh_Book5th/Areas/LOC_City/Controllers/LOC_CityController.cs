@@ -48,6 +48,7 @@ namespace Addresh_Book5th.Areas.LOC_City.Controllers
         {
             if (Convert.ToBoolean(dalLOC_City.PR_City_DeleteByPK(CityID)))
             {
+                TempData["LOC_City_Delete_Message"] = "Record Deleted Successfully!!";
                 return RedirectToAction("Index");
             }
             return RedirectToAction("Index");

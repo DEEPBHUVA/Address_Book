@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OTEj9d8nq5fBrODMiidDjDjypK9A5Wsov/M6aACKxUQ=",
+  "Hash": "/n+yq/R7Dm8FZTIlzwOPo2NhmnRDMt+Y1VnzUJn+5SY=",
   "Source": "Addresh_Book5th",
   "BasePath": "_content/Addresh_Book5th",
   "Mode": "Default",
@@ -8056,6 +8056,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\IMG_20200718_113722.JPG"
+    },
+    {
+      "Identity": "D:\\CollageMaterial\\Sem-5\\.Net\\.Net_Project\\Addresh_Book5th\\Addresh_Book5th\\wwwroot\\Images\\PicsArt_01-14-09.57.04 (2).jpg",
+      "SourceId": "Addresh_Book5th",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CollageMaterial\\Sem-5\\.Net\\.Net_Project\\Addresh_Book5th\\Addresh_Book5th\\wwwroot\\",
+      "BasePath": "_content/Addresh_Book5th",
+      "RelativePath": "Images/PicsArt_01-14-09.57.04 (2).jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\PicsArt_01-14-09.57.04 (2).jpg"
     },
     {
       "Identity": "D:\\CollageMaterial\\Sem-5\\.Net\\.Net_Project\\Addresh_Book5th\\Addresh_Book5th\\wwwroot\\Images\\PicsArt_06-25-10.12.49.jpg",
